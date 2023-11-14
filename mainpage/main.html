@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="section-1">
+<div class="container">
+    <h1>Password Generator</h1>
+    <div class="display">
+        <input type="text" id="password" placeholder="Password">
+        <img src="images/copy.png" onclick="copyPassword()">
+    </div>
+    <button onclick="createPassword()"><img src="images/generate.png">Generate Password</button>
+</div>
+</div>
+
+<!--save board-->
+<div class="section-2">
+    <div class="container">
+        <div class="todo-app">
+            <h1>Record <img src="images/icon.png"></h1>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add Username & Password">
+                <button onclick="add()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<script src="script1.js"></script>
+<script src="script2.js"></script>
+
+</body>
+</html>

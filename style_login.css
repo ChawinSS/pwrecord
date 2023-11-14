@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e3edf7;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.input-box{
+    width: 30%;
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin: 7% auto;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+.input-box input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    color: #555;
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+button{
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    padding: 10px 50px;
+    background: #333;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+
+  .password-fill {
+    position: relative;
+}
+
+.password-fill img{
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust this value to set the distance from the right edge */
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.eyeicon{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Toggle - Easy Tutorials</title>
+    <link rel="stylesheet" href="style_login.css">
+</head>
+<body>
+
+   <div class="input-box">
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Username" required>
+
+      <label for="password">Password:</label>
+      <div class="password-fill">
+      <input type="password" id="password" placeholder="1234" required>
+      <img src="images/eye-close.png" id="eyeicon">
+      </div>
+      <button type="button" onclick="validateLogin()">Login</button>
+  </form>
+   </div>
+
+
+<script>
+
+  let eyeicon = document.getElementById("eyeicon");
+  let password = document.getElementById("password");
+
+  eyeicon.onclick = function(){
+    if(password.type == "password"){
+        password.type = "text";
+        eyeicon.src = "images/eye-open.png";
+    }else{
+        password.type = "password";
+        eyeicon.src = "images/eye-close.png";
+    }
+  }
+
+  function validateLogin() {
+    const usernameInput = document.getElementById('username').value;
+    const passwordInput = document.getElementById('password').value;
+
+    const correctUsername = 'chawinkk';
+    const correctPassword = '13031993gG!!';
+
+    if (usernameInput === correctUsername && passwordInput === correctPassword) {
+        alert('Login successful!');
+        window.location.href = 'mainpage/main.html';
+        // Redirect to another page or perform other actions after successful login
+    } else {
+        alert('Invalid username or password. Please try again.');
+        // Optionally, you could clear the input fields here
+    }
+}
+
+</script>
+
+
+</body>
+</html>
